@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --var-font-color: rgb(17, 6, 116);
+
+}
+
+html {
+    background-color: blue;
+    background-image: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+
+}
+
+header img {
+    max-width: 150px;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    color: var(--var-font-color);
+    overflow-x: hidden;
+
+}
+
+a {
+    color: var(--var-font-color);
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+header h2 {
+    margin-right: auto;
+    font-size: 200%;
+    font-variant: small-caps;
+
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav li {
+    background-color: rgba(220, 220, 220, 0.35);
+    margin-inline: 1vw;
+
+}
+
+nav a {
+    padding: 2vh 1vw;
+    display: block;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: all 300ms ease;
+}
+
+nav a:hover {
+    background-color: rgba(220, 220, 220, 0.8);
+    color: darkblue;
+}
+
+main {
+    display: flex;
+    gap: 1vw;
+
+}
+
+aside, section {
+    flex: 0 1 400px;
+    border: 3px solid purple;
+    height: 400px;
+    background-color: rgba(250, 128, 114, .35)
+
+}
+
+footer {
+    padding: 3vh 0;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 85%;
+
+}
+
+#hamburger-icon, #x-icon{
+    z-index: 999;
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    display: none;
+    font-size: 130%;
+}
+
+#showNavigation {
+    display: none;
+
+}
+
+#hamburger-icon:hover, #x-icon:hover {
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 767px) {
+
+    html {
+        background-image: url(../images/background2.jpg);
+
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside, section {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    h2 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #navigation {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65%;
+        height: 100vh;
+        background-color: rgb(10, 185, 185, 0.8);
+        transform: translateX(100%);
+        transition: all 300ms ease-in;
+    }
+
+    #navigation[data-visible="true"] {
+        transform: translateX(0%);
+
+    }
+
+    #showNavigation {
+        width: 25px;
+        aspect-ratio: 1;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        background-image: url("../images/hamburger.png");
+        top: 3vh;
+        right: 3vh;
+    
+    }
+
+    #showNavigation[data-visible="false"] {
+        display: block;
+
+    }
+
+    #showNavigation[data-visible="true"] {
+        background-image: url("");
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 30vh;
+
+    }
+
+    nav li {
+        background-color: transparent;
+
+    }
+
+    #hamburger-icon {
+        display: block;
+
+    }
+}
