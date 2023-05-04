@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/imagegallery.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="Harry Styles" title="Harry Styles">
+        </a>          
+        <h2>Harry Styles Image Gallery</h2>
+    </header>
+
+    <main>
+
+        <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+      <img src="./images/harry1.jpg" alt="">
+      <img src="./images/harry2.jpg" alt="">
+      <img src="./images/harry3.jpg" alt="">
+      <img src="./images/harry4.webp" alt="">
+      <img src="./images/harry5.webp" alt="">
+    </div>
+    
+    <div class="column">
+        <img src="./images/harry6.jpg" alt="">
+        <img src="./images/harry7.jpg" alt="">
+        <img src="./images/harry8.jpg" alt="">
+        <img src="./images/harry9.webp" alt="">
+        <img src="./images/harry10.avif" alt="">
+    </div> 
+     
+    <div class="column">
+        <img src="./images/harry11.webp" alt="">
+        <img src="./images/harry12.avif" alt="">
+        <img src="./images/harry13..webp" alt="">
+        <img src="./images/harry14.webp" alt="">
+        <img src="./images/harry15.jpg" alt="">
+    </div>
+    
+    <div class="column">
+        <img src="./images/harry16.webp" alt="">
+        <img src="./images/harry17.webp" alt="">
+        <img src="./images/harry18.webp" alt="">
+        <img src="./images/harry19.avif" alt="">
+        <img src="./images/harry20.jpg" alt="">
+    </div>
+  </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="copyright"></span></p>
+    </footer>
+        <!-- Javascript - Get Current Year for the Footer -->
+        <script>
+            window.onload = function() {
+                var d = new Date();
+                document.getElementById("copyright").innerHTML = d.getFullYear();
+            }
+        </script>
+</body>
+</html>

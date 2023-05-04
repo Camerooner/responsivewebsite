@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poiret One', cursive;
+    background-image:conic-gradient(from 90deg at bottom right, cyan, rebeccapurple) ;
+    color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header, footer {
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+    margin-bottom: 3vh;
+
+}
+
+nav {
+    flex: 0 1 300px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 100px;
+}
+
+nav li {
+    width: 80%;
+    border: 1px solid aqua;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+nav a{
+    padding: 2vh;
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+nav a:link, nav a:visited {
+    color: aquamarine;
+
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: gold;
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+nav li a:hover {
+    cursor: pointer;
+
+}
+
+main {
+    flex: 0 1 800px;
+
+}
+header img {
+    max-width: 200px;
+    margin: 2vh;
+}
+
+article {
+    padding: 4vh 2vh;
+    background-color: lightblue;
+    margin-bottom: 2vh;
+    border: 1px solid violet;
+    color: black;
+
+}
+
+.caption {
+    margin: 2vh 0;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cornerBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: blueviolet;
+    color: aquamarine;
+    font-size: 110%;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+#cornerBtn {
+    background-color: blueviolet;
+    color: aqua;
+    padding: 15px;
+}
+
+footer {
+    padding: 3vh 0;
+    
+}
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+    font-variant: small-caps;
+    color: blueviolet;
+
+}
